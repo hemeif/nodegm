@@ -1,0 +1,43 @@
+<% include header.html %>
+
+<link rel="stylesheet" href="index/css/login.css">
+
+<form action="/login" method="post" enctype="application/x-www-form-urlencoded">
+    <h3>login</h3>
+    <div class="user">
+        用户名:<input type="text" name="username" id="user" placeholder="请输入您的用户名">
+        <div class="userm">
+            用户名不能为空
+        </div>
+
+    </div>
+    <div class="pass">
+        密&nbsp;&nbsp;&nbsp;码:<input type="text" name="password" id="pass" placeholder="请输入您的密码">
+        <div class="passm">
+            密码不能为空
+        </div>
+    </div>
+    <button type="submit" id="submit">登陆</button>
+    <a href="reg" id="zhuce">注册</a>
+</form>
+<div class="sss"></div>
+
+
+
+<!--<div class="panel panel-primary">-->
+    <!--<div class="panel-heading">登陆界面</div>-->
+    <!--<div class="panel-body">-->
+        <!--<form action="/login" method="post" enctype="application/x-www-form-urlencoded">-->
+            <!--<div class="form-group">-->
+                <!--<label>用户名</label>-->
+                <!--<input type="text" name="username" class="form-control" placeholder="请输入用户名">-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>密码</label>-->
+                <!--<input type="password" name="password" class="form-control" placeholder="请输入密码">-->
+            <!--</div>-->
+            <!--<button type="submit" class="btn btn-default">登陆</button>-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
+<% include footer.html %>

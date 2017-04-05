@@ -1,0 +1,19 @@
+<% include header.html %>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <%= user %>
+        </div>
+        <ul>
+            <% for(var i=0;i<ars.length;i++){%>
+            <li>
+                <a href="/show/<%= ars[i].aid %>">
+                <%= ars[i].title %>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+
+<% include footer.html %>

@@ -1,0 +1,22 @@
+<% include header.html %>
+<link rel="stylesheet" href="../index/css/bootstrap.min.css">
+<link rel="stylesheet" href="../index/css/index.css">
+<link rel="stylesheet" href="../index/css/header.css">
+<script src="../index/js/jquery-1.10.1.min.js"></script>
+<script src="../index/js/jquery.js"></script>
+<script src="../index/js/index.js"></script>
+<div class="container" style="width: 960px;margin:0 auto;">
+    <div class="row">
+        <h1><%= content.title %></h1>
+        <div style="line-height: 50px;color: #666">作者：<%= content.uid %>
+            栏目：<%= content.cid %>
+            时间：<%= content.time %>
+        </div>
+        <article>
+            <%- content.content %>
+        </article>
+    </div>
+</div>
+
+
+<% include footer.html %>

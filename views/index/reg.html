@@ -1,0 +1,61 @@
+<% include header.html %>
+<link rel="stylesheet" href="index/css/reg.css">
+
+<form method="post" enctype="application/x-www-form-urlencoded" action="/reg">
+    <h3>Register</h3>
+    <div class="user">
+        用户名:<input type="text" id="exampleInputEmail1" placeholder="请输入用户名" required name="username">
+        <!--<div class="userm" style="display:block">-->
+            <!--输入用户名-->
+        <!--</div>-->
+    </div>
+    <div class="pass">
+        昵&nbsp;&nbsp;&nbsp;称:<input type="text"  placeholder="请输入昵称" required name="nickname">
+    </div>
+    <div class="pass">
+        密&nbsp;&nbsp;&nbsp;码:<input type="password" placeholder="请输入密码" required name="password">
+
+        <div class="passm">
+            密码不能为空
+        </div>
+    </div>
+    <!--<div class="pass">-->
+        <!--密&nbsp;&nbsp;&nbsp;码:<input type="password" name="pass2"  placeholder="再次输入密码" >-->
+        <!--<div class="passm">-->
+            <!--两次密码不一致-->
+        <!--</div>-->
+    <!--</div>-->
+    <button type="submit" id="submit">注册</button>
+
+</form>
+<div class="sss"></div>
+
+
+
+
+
+<!--<section class="denglu" style="width: 500px;margin:0 auto;">-->
+    <!--<form method="post" enctype="application/x-www-form-urlencoded" action="/reg">-->
+        <!--<div class="form-group">-->
+            <!--<label for="exampleInputEmail1">用户名</label>-->
+            <!--<input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" required name="username">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label>密码</label>-->
+            <!--<input type="password" class="form-control" placeholder="请输入密码" required name="password">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label>确认密码</label>-->
+            <!--<input type="password" class="form-control" placeholder="再次输入密码" >-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label>昵称</label>-->
+            <!--<input type="text" class="form-control" placeholder="请输入昵称" required name="nickname">-->
+        <!--</div>-->
+
+
+        <!--<button type="submit" class="btn btn-default pull-right btn-primary">注册</button>-->
+        <!--<button type="submit" class="btn btn-default pull-left btn-primary">取消</button>-->
+    <!--</form>-->
+<!--</section>-->
+<% include footer.html %>
